@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Services;
 
 namespace case_study.Controllers
 {
@@ -6,22 +7,18 @@ namespace case_study.Controllers
     [Route("api/v1/[controller]")]
     public class FibonacciController : ControllerBase
     {
+        private readonly FibonacciService _fibonacciService;
+
+        public FibonacciController(FibonacciService fibonacciService)
+        {
+            _fibonacciService = fibonacciService;
+        }
+
         [HttpGet("fibonacciList")]
         public ActionResult<List<int>> GetFibonnaciNumberList(int iteration)
         {
-            List<int> fibonacciList = new();
-            int a = 0;
-            int b = 1;
-
-            for (int i = 0; i < iteration; i++)
-            { 
-                int temp = a;
-                a = b;
-                b = temp + b;
-
-                fibonacciList.Add(a);
-            }
-
+            List<int> fibonacciList = _fibonacciService.GenerateFibonacciList(iteration);
+            
             return fibonacciList;
         }
     }
