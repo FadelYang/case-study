@@ -9,12 +9,6 @@ namespace case_study.Controllers
     [Route("api/v1/[controller]")]
     public class TriangleController : ControllerBase
     {
-        [HttpGet("helloTriangle")]
-        public string GetHelloTriangle()
-        {
-            return $"Hello Triangle";
-        }
-
         // Equilateral Triangle, has 3 equals side
         // Isoceles Triangle, has 2 equals side
         // Scalene Triangle, has no equals side

@@ -1,6 +1,7 @@
 namespace Models
 {
-    public class Triangle{
+    public class Triangle
+    {
         public float FirstSide { get; set; }
 
         public float SecondSide { get; set; }
