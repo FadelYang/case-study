@@ -1,15 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "GoNvWWRWIomJJaPNRK3atH1KKUnBOzbkr+wdHZlivS07idcZaNbyj5F+CMXq6HXPi+Kl+zvK4KzX/6Wj7Giwzw==",
+  "dgSpecHash": "HRqv248CtxcyKQIRO9lYUwNfAXhjeYje6+peqOV1GOkDBuVgZtZuDDT3iETx4sDhj1kxvzaY2zJettJ56PZUHw==",
   "success": true,
   "projectFilePath": "/home/fadelyang/Documents/belajar/csharp/case-study/case-study/case-study.csproj",
   "expectedPackageFiles": [
+    "/home/fadelyang/.nuget/packages/autofac/7.1.0/autofac.7.1.0.nupkg.sha512",
+    "/home/fadelyang/.nuget/packages/autofac.extensions.dependencyinjection/8.0.0/autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "/home/fadelyang/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/fadelyang/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "/home/fadelyang/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/home/fadelyang/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/home/fadelyang/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/home/fadelyang/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "/home/fadelyang/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "/home/fadelyang/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "/home/fadelyang/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }
