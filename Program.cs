@@ -1,10 +1,17 @@
 using Services;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddScoped<TriangleService>();
-builder.Services.AddScoped<FibonacciService>();
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(builder =>
+{
+    // Add your Autofac DI registrations here
+    builder.RegisterType<TriangleService>().As<ITriangleService>();
+    builder.RegisterType<FibonacciService>().As<IFibonacciService>();
+});
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -27,3 +34,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+

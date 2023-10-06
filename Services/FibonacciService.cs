@@ -1,6 +1,6 @@
 namespace Services
 {
-    public class FibonacciService
+    public class FibonacciService : IFibonacciService
     {
         public List<int> GenerateFibonacciList(int iteration)
         {

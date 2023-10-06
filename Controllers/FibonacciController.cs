@@ -7,9 +7,9 @@ namespace case_study.Controllers
     [Route("api/v1/[controller]")]
     public class FibonacciController : ControllerBase
     {
-        private readonly FibonacciService _fibonacciService;
+        private readonly IFibonacciService _fibonacciService;
 
-        public FibonacciController(FibonacciService fibonacciService)
+        public FibonacciController(IFibonacciService fibonacciService)
         {
             _fibonacciService = fibonacciService;
         }

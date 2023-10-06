@@ -1,6 +1,6 @@
 namespace Services
 {
-    public class TriangleService
+    public class TriangleService : ITriangleService
     {
         public string DetermineTypeOfTriangle(double firstSide, double secondSide, double thirdSide)
         {

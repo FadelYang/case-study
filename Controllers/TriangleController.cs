@@ -10,9 +10,9 @@ namespace case_study.Controllers
     [Route("api/v1/[controller]")]
     public class TriangleController : ControllerBase
     {
-        private readonly TriangleService _triangleService;
+        private readonly ITriangleService _triangleService;
 
-        public TriangleController(TriangleService triangleService)
+        public TriangleController(ITriangleService triangleService)
         {
             _triangleService = triangleService;
         }
