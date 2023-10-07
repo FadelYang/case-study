@@ -10,6 +10,7 @@ builder.Host.ConfigureContainer<ContainerBuilder>(builder =>
     // Add your Autofac DI registrations here
     builder.RegisterType<TriangleService>().As<ITriangleService>();
     builder.RegisterType<FibonacciService>().As<IFibonacciService>();
+    builder.RegisterType<QueueImplementService>().As<IQueueImplementService>();
 });
 
 
