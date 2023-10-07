@@ -11,6 +11,7 @@ builder.Host.ConfigureContainer<ContainerBuilder>(builder =>
     builder.RegisterType<TriangleService>().As<ITriangleService>();
     builder.RegisterType<FibonacciService>().As<IFibonacciService>();
     builder.RegisterType<QueueImplementService>().As<IQueueImplementService>();
+    builder.RegisterType<QuickSortService>().As<IQuickSortService>();
 });
 
 
